@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Dashboard - NiceAdmin Bootstrap Template</title>
+  <title>@yield('titulo')</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -26,11 +26,7 @@
 
 <body>
 
-@include('shared.header')
-
-@include('shared.aside')
-
-@include('shared.footer')
+    @yield('contenido')
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
   <script src="{{ asset('NiceAdmin/assets/vendor/apexcharts/apexcharts.min.js') }}"></script>
@@ -44,5 +40,4 @@
   <script src="{{ asset('NiceAdmin/assets/js/main.js') }}"></script>
 
 </body>
-
 </html>
